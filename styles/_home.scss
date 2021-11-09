@@ -1,0 +1,61 @@
+.home {
+    display: flex;
+    & > .section {
+        @extend %align-center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding: 2rem 5vw;
+        background: url("../public/img/beach.jpg");
+        background-size: cover;
+        &::before {
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(black, 0.5);
+        }
+        & > .title {
+            position: relative;
+            z-index: 10;
+            font-size: 8rem;
+            font-weight: 1000;
+            background: url("../public/img/beach.jpg");
+            background-size: cover;
+            background-position: center;
+            background-clip: text;
+            color: rgba($color--primary, 0.9);
+            font-family: $font--accent;
+        }
+        & > .description {
+            font-size: 3.25rem;
+            color: $color--primary;
+            z-index: 10;
+            font-family: $font--primary;
+        }
+
+        & > button {
+            margin-top: calc(min(3rem, 2vw));
+            font-size: 3.25rem;
+            color: $color--primary;
+            z-index: 10;
+            font-family: $font--primary;
+            border: 0.8rem solid rgba($color--primary, 1);
+            padding: 0.5rem 10rem;
+            &::after {
+                content: " 👉";
+                position: relative;
+                bottom: 10%;
+            }
+            &:hover {
+                cursor: pointer;
+                &::after {
+                    content: " 👇";
+                }
+            }
+        }
+    }
+}

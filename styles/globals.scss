@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@import "fonts";
+@import "colors";
+@import "_media-queries";
+
+button,
+a,
+li,
+ul {
+    text-decoration: none;
+    padding: 0;
+    border: none;
+    background: none;
+    list-style: none;
+}
+
+%align-center {
+    display: flex;
+    align-items: center;
+}
+
+.container-full {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+@import "nav";
+@import "home";
+@import "about";
+
+@include ipad {
+    html {
+        font-size: 7px;
+    }
+}
+
+@include tablet {
+    html {
+        font-size: 6px;
+    }
+}
+
+@include mobile {
+    html {
+        font-size: 3px;
+    }
+}
