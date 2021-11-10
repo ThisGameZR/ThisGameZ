@@ -1,105 +1,55 @@
 .about {
-    display: grid;
-    grid-template-columns: 6% 90% 5%;
-    background: #fff0db;
-    & > div:nth-of-type(1) {
-        margin-left: 50%;
-        background: $color--secondary--dark;
-    }
-    &__box {
-        padding-top: 3vh;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5vh;
+    &-content {
+        width: 100%;
+        height: 100%;
         display: grid;
-        grid-template-rows: 15% 85%;
-        &__header {
-            @extend %align-center;
-            flex-direction: column;
-            justify-content: center;
-            font-size: 3.5rem;
-            font-family: $font--primary;
-            font-weight: 600;
-            & > span {
-                position: relative;
-                color: $color--secondary--light;
-                &::after {
-                    position: absolute;
-                    content: " ";
-                    top: 4.375rem;
-                    left: 0.625rem;
-                    right: 0.625rem;
-                    bottom: 0;
-                    border-bottom: 0.4rem solid $color--secondary--light;
+        grid-template-rows: 1fr 1fr;
+        &-top,
+        &-bottom {
+            display: grid;
+            height: 100%;
+            grid-template-columns: 1fr 1fr;
+        }
+        &-top {
+            @include mobile {
+                grid-template-columns: 1fr;
+                grid-template-rows: 75% 25%;
+            }
+            &-left {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &-image {
+                    position: relative;
+                    width: 40%;
+                    height: 90%;
+                    @include ipadPro {
+                        width: 50%;
+                        height: 75%;
+                    }
+                    @include ipad {
+                        width: 70%;
+                        height: 70%;
+                    }
+                    @include mobile {
+                        width: 55%;
+                        height: 80%;
+                    }
+                    img {
+                        object-fit: cover;
+                        border-radius: 70%;
+                    }
                 }
+            }
+            &-right {
             }
         }
-        &__content {
-            margin-top: 1.5rem;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr;
-            &--left {
-                position: relative;
-                display: grid;
-                grid-template-rows: 2fr 2fr;
-                & > .image {
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    & > div {
-                        width: 45%;
-                        height: 100%;
-                        border-radius: 50%;
-                        background: url("../public/img/profile.jpg");
-                        background-size: cover;
-                        background-position: 0% 25%;
-                        content: "";
-                        transition: ease 1s;
-                        &:hover {
-                            transform: rotateY(180deg);
-                            background: white;
-                            position: relative;
-                            &::after {
-                                content: "Sahatham Promthongpan";
-                                position: absolute;
-                                top: 50%;
-                                left: 50;
-                                transform: translate(-50%, -50%);
-                            }
-                        }
-                    }
-                }
-                & > .description {
-                    display: flex;
-                    font-size: 1.4rem;
-                    padding: 2rem 2rem;
-                    flex-wrap: wrap;
-                    font-family: $font--primary;
-                }
-            }
-            &--right {
-                display: grid;
-                grid-template-rows: 8% 90%;
-                & > .header {
-                    display: flex;
-                    justify-content: center;
-                    font-size: 2rem;
-                    font-weight: 600;
-                    font-family: $font--primary;
-                    color: $color--secondary--light;
-                }
-                & > .content {
-                    display: grid;
-                    grid-template-columns: 25% 25% 25% 25%;
-                    grid-template-rows: 25% 25% 25% 25%;
-                    & > div:nth-of-type(1) {
-                        background: url("../public/img/node.png");
-                        background-size: cover;
-                        background-position: 0% 40%;
-                    }
-                }
-                margin-bottom: 2rem;
-            }
+        &-bottom {
         }
     }
 }
