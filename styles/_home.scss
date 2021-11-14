@@ -26,10 +26,13 @@
                 font-size: 8rem;
             }
             @media screen and (max-width: 1350px) {
-                font-size: 6rem;
+                font-size: 5.5rem;
             }
             @media screen and (max-width: 1024px) {
                 font-size: 4rem;
+            }
+            @include mobilePortrait {
+                font-size: 10rem;
             }
             font-weight: 1000;
             background: url("../public/img/beach.jpg");
@@ -49,6 +52,9 @@
             }
             @media screen and (max-width: 1024px) {
                 font-size: 2.1rem;
+            }
+            @include mobilePortrait {
+                font-size: 5rem;
             }
             color: $color--primary;
             z-index: 10;
@@ -78,6 +84,11 @@
                 border: 0.2rem solid rgba($color--primary, 1);
                 font-size: 1.7rem;
                 padding: 0.5rem 4rem;
+            }
+            @include mobilePortrait {
+                border: 1rem solid rgba($color--primary, 1);
+                font-size: 4rem;
+                padding: 0.5rem 10rem;
             }
             &::after {
                 content: " 👉";
