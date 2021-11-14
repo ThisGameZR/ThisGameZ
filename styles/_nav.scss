@@ -15,20 +15,23 @@
         color: $color--primary;
         font-family: $font--primary;
         font-size: calc(max(1.5rem, 12px));
-        @include ipad {
+        @include ipadPortrait {
+            font-size: 3rem;
+        }
+        @include ipadLandScape {
             font-size: 16px;
         }
-        @include mobile {
+        @include mobilePortrait {
             font-size: 12px;
         }
         &--list {
             @extend %align-center;
             justify-content: center;
             padding: calc(max(0.5rem, 5px)) calc(max(3rem, 20px));
-            @include ipad {
+            @include ipadLandScape {
                 padding-inline: 50px;
             }
-            @include mobile {
+            @include mobilePortrait {
                 padding-inline: 20px;
             }
             cursor: pointer;

@@ -40,19 +40,19 @@ html {
 @import "home";
 @import "about";
 
-@include ipad {
+@include ipadLandScape {
     html {
         font-size: 7px;
     }
 }
 
-@include tablet {
+@include ipadPortrait {
     html {
         font-size: 6px;
     }
 }
 
-@include mobile {
+@include mobilePortrait {
     html {
         font-size: 3px;
     }

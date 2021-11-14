@@ -13,17 +13,20 @@
             display: grid;
             height: 100%;
             grid-template-columns: 1fr 1fr;
-            @include ipadPro {
+            @include ipadProLandScape {
+                height: 100vh;
+            }
+            @include mobilePortrait {
                 height: 100vh;
             }
         }
         &-top {
-            @include ipadPro {
+            @include ipadProLandScape {
                 grid-template-columns: 50% 50%;
             }
-            @include mobile {
+            @include mobilePortrait {
                 grid-template-columns: 1fr;
-                grid-template-rows: 70% 30%;
+                grid-template-rows: 60% 40%;
             }
             &-left {
                 width: 100%;
@@ -34,12 +37,29 @@
                     position: relative;
                     width: 45%;
                     height: 90%;
-                    @include ipadPro {
+                    @media screen and (max-width: 1805px) and (min-width: 1378px) {
+                        width: 45%;
+                        height: 85%;
+                    }
+                    @include ipadProLandScape {
                         width: 80%;
                         height: 60%;
                     }
-                    @include mobile {
+                    @include mobilePortrait {
                         width: 90%;
+                        height: 70%;
+                    }
+                    @include ipadProPortrait {
+                        width: 80%;
+                        height: 70%;
+                    }
+                    @include ipadPortrait {
+                        width: 80%;
+                        height: 70%;
+                    }
+                    @include mobileLandScape {
+                        width: 80%;
+                        height: 80%;
                     }
                     img {
                         object-fit: cover;
@@ -68,18 +88,55 @@
                         font-family: $font--primary;
                         margin-bottom: auto;
                     }
-                    @include ipadPro {
+                    @media screen and (max-width: 1805px) and (min-width: 1378px) {
+                        grid-template-rows: 1fr 2fr;
+                        width: 100%;
+                        & > h1 {
+                            font-size: 3rem;
+                        }
+                        & > h2 {
+                            font-size: 1.8rem;
+                        }
+                    }
+                    @include ipadProLandScape {
                         width: 100%;
                         & > h2 {
                             font-size: 1.6rem;
                         }
                     }
-                    @include ipad {
+                    @include ipadLandScape {
                         & > h1 {
                             font-size: 5rem;
                         }
                         & > h2 {
                             font-size: 3rem;
+                        }
+                    }
+                    @include ipadProPortrait {
+                        width: 100%;
+                        & > h1 {
+                            font-size: 2.22rem;
+                        }
+                        & > h2 {
+                            font-size: 1.32rem;
+                        }
+                    }
+                    @include ipadPortrait {
+                        width: 100%;
+                        & > h1 {
+                            font-size: 4.5rem;
+                        }
+                        & > h2 {
+                            font-size: 2.5rem;
+                        }
+                    }
+                    @include mobileLandScape {
+                        width: 100%;
+                        & > h1 {
+                            font-size: 3.7rem;
+                        }
+                        & > h2 {
+                            font-size: 2.3rem;
                         }
                     }
                 }
@@ -90,22 +147,44 @@
                         font-size: 1.2rem;
                         font-family: $font--primary;
                     }
-                    @include ipadPro {
+                    @media screen and (max-width: 1805px) and (min-width: 1378px) {
+                        width: 90%;
+                        & > p {
+                            font-size: 1.28rem;
+                        }
+                    }
+                    @include ipadProLandScape {
                         width: 85%;
                         & > p {
                             font-size: 1.27rem;
                         }
                     }
-                    @include ipad {
+                    @include ipadLandScape {
                         width: 90%;
                         & > p {
                             font-size: 2.5rem;
                         }
                     }
+                    @include ipadProPortrait {
+                        width: 87%;
+                        & > p {
+                            font-size: 1.2rem;
+                        }
+                    }
+                    @include ipadPortrait {
+                        width: 86%;
+                        & > p {
+                            font-size: 2.56rem;
+                        }
+                    }
+                    @include mobileLandScape {
+                        width: 90%;
+                        & > p {
+                            font-size: 1.82rem;
+                        }
+                    }
                 }
-                @include mobile {
-                    position: relative;
-                    bottom: 20%;
+                @include mobilePortrait {
                     align-items: center;
                     &-title {
                         width: 80%;

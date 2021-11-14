@@ -21,7 +21,16 @@
         & > .title {
             position: relative;
             z-index: 10;
-            font-size: calc(min(8rem, 160px));
+            font-size: 10rem;
+            @media screen and (max-width: 1668px) {
+                font-size: 8rem;
+            }
+            @media screen and (max-width: 1350px) {
+                font-size: 6rem;
+            }
+            @media screen and (max-width: 1024px) {
+                font-size: 4rem;
+            }
             font-weight: 1000;
             background: url("../public/img/beach.jpg");
             background-size: cover;
@@ -32,6 +41,15 @@
         }
         & > .description {
             font-size: 3.25rem;
+            @media screen and (max-width: 1668px) {
+                font-size: 2.8rem;
+            }
+            @media screen and (max-width: 1350px) {
+                font-size: 2.4rem;
+            }
+            @media screen and (max-width: 1024px) {
+                font-size: 2.1rem;
+            }
             color: $color--primary;
             z-index: 10;
             font-family: $font--primary;
@@ -40,11 +58,27 @@
         & > button {
             margin-top: calc(min(3rem, 2vw));
             font-size: 3.25rem;
+
             color: $color--primary;
             z-index: 10;
             font-family: $font--primary;
             border: 0.8rem solid rgba($color--primary, 1);
             padding: 0.5rem 10rem;
+            @media screen and (max-width: 1668px) {
+                border: 0.6rem solid rgba($color--primary, 1);
+                font-size: 2.6rem;
+                padding: 0.5rem 8rem;
+            }
+            @media screen and (max-width: 1350px) {
+                border: 0.4rem solid rgba($color--primary, 1);
+                font-size: 2.2rem;
+                padding: 0.5rem 6rem;
+            }
+            @media screen and (max-width: 1024px) {
+                border: 0.2rem solid rgba($color--primary, 1);
+                font-size: 1.7rem;
+                padding: 0.5rem 4rem;
+            }
             &::after {
                 content: " 👉";
                 position: relative;
