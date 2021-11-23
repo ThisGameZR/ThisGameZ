@@ -18,8 +18,8 @@ export default function Nav({ references, active, navDisplay }) {
                 <li
                     className={
                         active == references.homeRef
-                            ? "navbar__menu--list active"
-                            : "navbar__menu--list"
+                            ? "navbar__menu__list active"
+                            : "navbar__menu__list"
                     }
                     onClick={() => scrollTo(references.homeRef)}
                 >
@@ -28,8 +28,8 @@ export default function Nav({ references, active, navDisplay }) {
                 <li
                     className={
                         active == references.aboutRef
-                            ? "navbar__menu--list active"
-                            : "navbar__menu--list"
+                            ? "navbar__menu__list active"
+                            : "navbar__menu__list"
                     }
                     onClick={() => scrollTo(references.aboutRef)}
                 >
@@ -38,8 +38,8 @@ export default function Nav({ references, active, navDisplay }) {
                 <li
                     className={
                         active == references.projectRef
-                            ? "navbar__menu--list active"
-                            : "navbar__menu--list"
+                            ? "navbar__menu__list active"
+                            : "navbar__menu__list"
                     }
                     onClick={() => scrollTo(references.projectRef)}
                 >
@@ -48,8 +48,8 @@ export default function Nav({ references, active, navDisplay }) {
                 <li
                     className={
                         active == references.contactRef
-                            ? "navbar__menu--list active"
-                            : "navbar__menu--list"
+                            ? "navbar__menu__list active"
+                            : "navbar__menu__list"
                     }
                     onClick={() => scrollTo(references.contactRef)}
                 >

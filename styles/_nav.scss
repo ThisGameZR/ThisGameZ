@@ -1,0 +1,31 @@
+.navbar {
+    width: 100vw;
+    height: 5vh;
+    position: fixed;
+    background: $color--dark--blue;
+    z-index: 999;
+    &__menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-inline: 0.9rem;
+        &__list {
+            margin-inline: auto;
+            color: $color--light--blue;
+            font-family: $font--primary;
+            font-size: 0.95rem;
+            @include wideScreen {
+                font-size: 1.5rem;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.active {
+    color: $color--bright--blue;
+    font-weight: 800;
+}

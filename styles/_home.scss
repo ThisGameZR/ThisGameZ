@@ -29,6 +29,12 @@
             color: $color--light--blue;
             border: 0.2rem solid $color--light--blue;
             padding: 0.2rem 0.5rem;
+            transition: 0.5s ease-in;
+            &:hover {
+                cursor: pointer;
+                color: $color--bright--blue;
+                border-color: $color--bright--blue;
+            }
         }
         @include wideScreen {
             & > .title {

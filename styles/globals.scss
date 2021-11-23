@@ -34,3 +34,9 @@ html {
 @import "nav";
 @import "home";
 @import "about";
+
+@include narrowScreen {
+    html {
+        font-size: 12px;
+    }
+}
