@@ -1,6 +1,9 @@
 .home {
     background: url("../public/img/home-bg.jpg");
     position: relative;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
     & > .section {
         position: relative;
         z-index: 10;

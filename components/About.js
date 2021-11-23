@@ -4,20 +4,21 @@ import { useRef } from "react";
 
 export default function About({ references }) {
     return (
-        <div className="container-full about" ref={references.aboutRef}>
+        <div className="about" ref={references.aboutRef}>
             <div className="about-content">
                 <div className="about-content-top">
                     <div className="about-content-top-left">
                         <div className="about-content-top-left-image">
-                            {/* <Image
+                            <Image
                                 src="/img/profile.jpg"
                                 layout="fill"
                                 quality="100"
-                            ></Image> */}
+                                objectFit="contain"
+                            ></Image>
                         </div>
                     </div>
                     <div className="about-content-top-right">
-                        <div className="about-content-top-right-title">
+                        <div className="about-content-top-right-content">
                             <h1>Hello! My name is Sahatham.</h1>
                             <h2>
                                 I&apos;m currently studying at Chiang Mai
@@ -25,8 +26,6 @@ export default function About({ references }) {
                                 <br /> I&apos;m a full-stack web developer based
                                 in Thailand
                             </h2>
-                        </div>
-                        <div className="about-content-top-right-text">
                             <p>
                                 I majored in Computer Engineering, I expertise
                                 in Web-development. I&apos;ve always been
@@ -37,8 +36,16 @@ export default function About({ references }) {
                             </p>
                         </div>
                     </div>
+                    <div className="contact-info">
+                        <div>facebook</div>
+                        <div>email</div>
+                        <div>phone</div>
+                    </div>
                 </div>
-                <div className="about-content-bottom"></div>
+                <div className="about-content-bottom">
+                    <div className="header">MY SKILLS</div>
+                    <div className="content"></div>
+                </div>
             </div>
         </div>
     );
