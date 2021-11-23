@@ -9,11 +9,11 @@ export default function About({ references }) {
                 <div className="about-content-top">
                     <div className="about-content-top-left">
                         <div className="about-content-top-left-image">
-                            <Image
+                            {/* <Image
                                 src="/img/profile.jpg"
                                 layout="fill"
                                 quality="100"
-                            ></Image>
+                            ></Image> */}
                         </div>
                     </div>
                     <div className="about-content-top-right">

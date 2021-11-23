@@ -20,11 +20,6 @@ ul {
     list-style: none;
 }
 
-%align-center {
-    display: flex;
-    align-items: center;
-}
-
 .container-full {
     display: flex;
     width: 100vw;
@@ -39,21 +34,3 @@ html {
 @import "nav";
 @import "home";
 @import "about";
-
-@include ipadLandScape {
-    html {
-        font-size: 7px;
-    }
-}
-
-@include ipadPortrait {
-    html {
-        font-size: 6px;
-    }
-}
-
-@include mobilePortrait {
-    html {
-        font-size: 3px;
-    }
-}
