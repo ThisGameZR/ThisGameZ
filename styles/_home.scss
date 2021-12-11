@@ -1,6 +1,8 @@
 .home {
     background: url("../public/img/home-bg.jpg");
+    background-position: center;
     position: relative;
+    // background: rgb(28, 46, 70);
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -18,25 +20,25 @@
             font-size: 1.8rem;
             font-family: $font--cursive;
             font-weight: 1000;
-            color: $color--light--blue;
+            color: white;
         }
         & > .description {
             font-size: 1rem;
             font-family: $font--primary;
-            color: $color--light--blue;
+            color: white;
             font-weight: 500;
         }
         & > button {
             font-size: 0.9rem;
             font-family: $font--primary;
-            color: $color--light--blue;
-            border: 0.2rem solid $color--light--blue;
+            color: white;
+            border: 0.2rem solid white;
             padding: 0.2rem 0.5rem;
             transition: 0.5s ease-in;
             &:hover {
                 cursor: pointer;
-                color: $color--bright--blue;
-                border-color: $color--bright--blue;
+                color: white;
+                border-color: white;
             }
         }
         @include wideScreen {

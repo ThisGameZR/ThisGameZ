@@ -10,7 +10,7 @@ export default function About({ references }) {
                     <div className="about-content-top-left">
                         <div className="about-content-top-left-image">
                             <Image
-                                src="/img/profile.jpg"
+                                src="/img/profile.png"
                                 layout="fill"
                                 quality="100"
                                 objectFit="contain"
@@ -36,15 +36,21 @@ export default function About({ references }) {
                             </p>
                         </div>
                     </div>
+
                     <div className="contact-info">
-                        <div>facebook</div>
-                        <div>email</div>
-                        <div>phone</div>
+                        <div>
+                            <Image
+                                src="/svg/facebook.svg"
+                                layout="fill"
+                            ></Image>
+                        </div>
+                        <div>
+                            <Image src="/svg/email.svg" layout="fill"></Image>
+                        </div>
+                        <div>
+                            <Image src="/svg/phone.svg" layout="fill"></Image>
+                        </div>
                     </div>
-                </div>
-                <div className="about-content-bottom">
-                    <div className="header">MY SKILLS</div>
-                    <div className="content"></div>
                 </div>
             </div>
         </div>

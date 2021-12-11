@@ -2,7 +2,7 @@
     width: 100vw;
     height: 5vh;
     position: fixed;
-    background: $color--dark--blue;
+    background: #dbae30;
     z-index: 999;
     &__menu {
         width: 100%;
@@ -12,7 +12,8 @@
         padding-inline: 0.9rem;
         &__list {
             margin-inline: auto;
-            color: $color--light--blue;
+            color: black;
+            font-weight: bold;
             font-family: $font--primary;
             font-size: 0.95rem;
             @include wideScreen {
@@ -27,6 +28,6 @@
 }
 
 .active {
-    color: $color--bright--blue;
+    color: #b50b0b;
     font-weight: 800;
 }
