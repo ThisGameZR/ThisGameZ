@@ -34,21 +34,26 @@ export default function About({ references }) {
                                 been fascinated by it. So I decided to deepen my
                                 knowledge in web development.
                             </p>
-                        </div>
-                    </div>
-
-                    <div className="contact-info">
-                        <div>
-                            <Image
-                                src="/svg/facebook.svg"
-                                layout="fill"
-                            ></Image>
-                        </div>
-                        <div>
-                            <Image src="/svg/email.svg" layout="fill"></Image>
-                        </div>
-                        <div>
-                            <Image src="/svg/phone.svg" layout="fill"></Image>
+                            <div className="contact-info">
+                                <div>
+                                    <Image
+                                        src="/svg/facebook.svg"
+                                        layout="fill"
+                                    ></Image>
+                                </div>
+                                <div>
+                                    <Image
+                                        src="/svg/email.svg"
+                                        layout="fill"
+                                    ></Image>
+                                </div>
+                                <div>
+                                    <Image
+                                        src="/svg/phone.svg"
+                                        layout="fill"
+                                    ></Image>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

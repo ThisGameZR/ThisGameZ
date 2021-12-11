@@ -1,6 +1,9 @@
 .navbar {
     width: 100vw;
     height: 5vh;
+    @media screen and (orientation: landscape) and (max-width: 1400px) {
+        height: 10vh;
+    }
     position: fixed;
     background: #ffd400;
     z-index: 999;
@@ -18,6 +21,9 @@
             font-size: 0.95rem;
             @include wideScreen {
                 font-size: 1.5rem;
+            }
+            @media screen and (min-width: 1024px) and (orientation: portrait) {
+                font-size: 2rem;
             }
             &:hover {
                 cursor: pointer;
