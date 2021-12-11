@@ -2,7 +2,7 @@
     width: 100vw;
     height: 5vh;
     position: fixed;
-    background: #dbae30;
+    background: #ffd400;
     z-index: 999;
     &__menu {
         width: 100%;
@@ -28,6 +28,6 @@
 }
 
 .active {
-    color: #b50b0b;
+    color: #5008ff;
     font-weight: 800;
 }

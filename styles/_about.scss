@@ -2,7 +2,7 @@
     padding-top: 5vh;
     width: 100vw;
     height: 100vh;
-    background: #679f2a;
+    background: #ffffe1;
     &-content {
         position: relative;
         width: 100%;
@@ -43,15 +43,15 @@
                     font-family: $font--primary;
                     width: 93%;
                     & h1 {
-                        font-size: 1.65rem;
+                        font-size: 1.65em;
                         color: rgb(0, 0, 0);
                     }
                     & h2 {
-                        font-size: 1rem;
+                        font-size: 1em;
                         color: rgb(0, 0, 0);
                     }
                     & p {
-                        font-size: 0.9rem;
+                        font-size: 0.9em;
                         text-align: center;
                         color: rgb(0, 0, 0);
                         font-weight: 600;
@@ -81,7 +81,27 @@
             right: 0;
             left: 0;
             z-index: -1;
-            background: #dbae30;
+            background: #ffd400;
+        }
+        @media screen and (orientation: portrait) and (max-height: 568px) {
+            &-top {
+                &-left {
+                    height: 40%;
+                    &-image {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                &-right {
+                    height: 40%;
+                    &-content {
+                        font-size: 0.8rem;
+                    }
+                }
+                .contact-info {
+                    height: 10%;
+                }
+            }
         }
     }
 }
