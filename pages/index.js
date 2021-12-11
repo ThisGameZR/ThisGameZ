@@ -2,6 +2,7 @@ import Home from "../components/Home";
 import About from "../components/About";
 import Nav from "../components/Nav";
 import { useEffect, useRef, useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Index() {
     const references = {
@@ -42,6 +43,7 @@ export default function Index() {
 
     return (
         <div>
+            <Toaster />
             <Nav
                 references={references}
                 active={active}

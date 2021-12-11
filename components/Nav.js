@@ -43,7 +43,7 @@ export default function Nav({ references, active, navDisplay }) {
                     }
                     onClick={() => scrollTo(references.projectRef)}
                 >
-                    MY PROJECTS
+                    MY SKILLS
                 </li>
                 <li
                     className={
@@ -53,7 +53,7 @@ export default function Nav({ references, active, navDisplay }) {
                     }
                     onClick={() => scrollTo(references.contactRef)}
                 >
-                    CONTACT
+                    MY PROJECTS
                 </li>
             </ul>
         </div>

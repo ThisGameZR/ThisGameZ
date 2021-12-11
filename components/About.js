@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { useRef } from "react";
+import toast from "react-hot-toast";
 
 export default function About({ references }) {
     return (
@@ -35,19 +36,43 @@ export default function About({ references }) {
                                 knowledge in web development.
                             </p>
                             <div className="contact-info">
-                                <div>
+                                <div
+                                    onClick={() => {
+                                        window.open(
+                                            "https://www.facebook.com/profile.php?id=100009118786117"
+                                        );
+                                    }}
+                                >
                                     <Image
                                         src="/svg/facebook.svg"
                                         layout="fill"
                                     ></Image>
                                 </div>
-                                <div>
+                                <div
+                                    onClick={() => {
+                                        navigator.clipboard.writeText(
+                                            "thisgamezforwork@gmail.com"
+                                        );
+                                        toast("thisgamezforwork@gmail.com");
+                                        toast("✅ Email copied to clipboard");
+                                    }}
+                                >
                                     <Image
                                         src="/svg/email.svg"
                                         layout="fill"
                                     ></Image>
                                 </div>
-                                <div>
+                                <div
+                                    onClick={() => {
+                                        navigator.clipboard.writeText(
+                                            "+66628590849"
+                                        );
+                                        toast("+66628590849");
+                                        toast(
+                                            "✅ Phone number copied to clipboard"
+                                        );
+                                    }}
+                                >
                                     <Image
                                         src="/svg/phone.svg"
                                         layout="fill"
