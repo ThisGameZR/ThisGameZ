@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Skill({ references, active }) {
     return (
-        <div className="skill" ref={references.skillRef}>
+        <div className="skill snap" ref={references.skillRef}>
             <div className="skill-wrap">
                 <div
                     className="skill-content"

@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 
 export default function About({ references, active }) {
     return (
-        <div className="about" ref={references.aboutRef}>
+        <div className="about snap" ref={references.aboutRef}>
             <div className="about-content">
                 <div className="about-content-top">
                     <div

@@ -7,7 +7,7 @@ export default function Home({ references }) {
     };
 
     return (
-        <div className="home" ref={references.homeRef}>
+        <div className="home snap" ref={references.homeRef}>
             <div className="section">
                 <div className="title">Hello, I&apos;m ThisGameZ</div>
                 <div className="description">

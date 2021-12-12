@@ -22,6 +22,12 @@ ul {
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.snap {
+    scroll-snap-align: start;
 }
 
 @import "nav";
