@@ -4,7 +4,6 @@ export default function Nav({ references, active, navDisplay }) {
     const scrollTo = (ref) => {
         ref.current?.scrollIntoView();
     };
-
     return (
         <div
             className="navbar"
@@ -37,21 +36,21 @@ export default function Nav({ references, active, navDisplay }) {
                 </li>
                 <li
                     className={
-                        active == references.projectRef
+                        active == references.skillRef
                             ? "navbar__menu__list active"
                             : "navbar__menu__list"
                     }
-                    onClick={() => scrollTo(references.projectRef)}
+                    onClick={() => scrollTo(references.skillRef)}
                 >
                     MY SKILLS
                 </li>
                 <li
                     className={
-                        active == references.contactRef
+                        active == references.projectRef
                             ? "navbar__menu__list active"
                             : "navbar__menu__list"
                     }
-                    onClick={() => scrollTo(references.contactRef)}
+                    onClick={() => scrollTo(references.projectRef)}
                 >
                     MY PROJECTS
                 </li>

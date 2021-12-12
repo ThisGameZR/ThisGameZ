@@ -22,10 +22,12 @@
                 &-image {
                     position: relative;
                     height: 90%;
-                    width: 90%;
+                    width: 60%;
                     overflow: hidden;
-                    border-radius: 45%;
+                    border-radius: 50%;
                 }
+                transition: all 1s ease-in-out;
+                opacity: 0;
             }
             &-right {
                 position: relative;
@@ -62,7 +64,12 @@
                     @media screen and (min-width: 1024px) and (orientation: portrait) {
                         font-size: 2rem;
                     }
+                    @media screen and (max-width: 360px) and (orientation: portrait) {
+                        font-size: 0.8rem;
+                    }
                 }
+                transition: all 1s ease-in-out;
+                opacity: 0;
             }
             .contact-info {
                 display: flex;
@@ -86,7 +93,7 @@
         &::after {
             content: "";
             position: absolute;
-            height: 5%;
+            height: 5vh;
             bottom: 0;
             right: 0;
             left: 0;
@@ -185,6 +192,10 @@
                             background: #ffe565;
                             transform: rotateZ(60deg);
                             border-radius: 50%;
+                            @media screen and (min-width: 970px) and (max-width: 1220px) {
+                                bottom: 10%;
+                                top: 10%;
+                            }
                         }
                         width: 100%;
                         height: 70%;

@@ -1,0 +1,76 @@
+.skill {
+    padding-top: 5vh;
+    width: 100vw;
+    height: 100vh;
+    background: #ffffe1;
+    &-wrap {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        &::after {
+            content: "";
+            position: absolute;
+            height: 5vh;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: -1;
+            background: #ffd400;
+        }
+    }
+    &-content {
+        margin-top: 1.3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        column-gap: 5rem;
+        transition: all 1s ease-in-out;
+        opacity: 0;
+        & > div {
+            position: relative;
+            width: 6rem;
+            height: 6rem;
+        }
+        @media screen and (min-width: 768px) and (orientation: portrait) {
+            & > div {
+                width: 9rem;
+                height: 9rem;
+            }
+        }
+        @media screen and (min-width: 1024px) and (orientation: portrait) {
+            margin-top: 7rem;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            & > div {
+                width: 12rem;
+                height: 12rem;
+            }
+        }
+        @media screen and (orientation: landscape) and (min-width: 1024px) {
+            margin-top: 8%;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            & > div {
+                width: 6rem;
+                height: 6rem;
+                @media screen and (min-width: 1500px) {
+                    width: 8.5rem;
+                    height: 8.5rem;
+                }
+            }
+        }
+        @media screen and (orientation: landscape) and (max-width: 1023px) {
+            margin-top: 7%;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            & > div {
+                width: 5rem;
+                height: 5rem;
+            }
+        }
+    }
+}

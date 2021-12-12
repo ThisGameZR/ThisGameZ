@@ -27,6 +27,7 @@ html {
 @import "nav";
 @import "home";
 @import "about";
+@import "skill";
 
 @include narrowScreen {
     html {

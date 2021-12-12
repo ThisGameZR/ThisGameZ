@@ -3,22 +3,36 @@ import Image from "next/image";
 import { useRef } from "react";
 import toast from "react-hot-toast";
 
-export default function About({ references }) {
+export default function About({ references, active }) {
     return (
         <div className="about" ref={references.aboutRef}>
             <div className="about-content">
                 <div className="about-content-top">
-                    <div className="about-content-top-left">
+                    <div
+                        className="about-content-top-left"
+                        style={
+                            active == references.aboutRef
+                                ? { opacity: 1 }
+                                : { opacity: 0, transform: "translateX(-100%)" }
+                        }
+                    >
                         <div className="about-content-top-left-image">
                             <Image
-                                src="/img/profile.png"
+                                src="/img/profile.jpg"
                                 layout="fill"
                                 quality="100"
-                                objectFit="contain"
+                                objectFit="cover"
                             ></Image>
                         </div>
                     </div>
-                    <div className="about-content-top-right">
+                    <div
+                        className="about-content-top-right"
+                        style={
+                            active == references.aboutRef
+                                ? { opacity: 1 }
+                                : { opacity: 0, transform: "translateX(100%)" }
+                        }
+                    >
                         <div className="about-content-top-right-content">
                             <h1>Hello! My name is Sahatham.</h1>
                             <h2>
