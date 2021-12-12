@@ -1,6 +1,7 @@
 import Home from "../components/Home";
 import About from "../components/About";
 import Nav from "../components/Nav";
+import Project from "../components/Project";
 import Skill from "../components/Skill";
 import { useEffect, useRef, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
@@ -29,10 +30,10 @@ export default function Index() {
             setActive(references.skillRef);
             setNavDisplay(true);
         }
-        // if (window.pageYOffset >= references.projectRef.current.offsetTop) {
-        //     setActive(references.projectRef);
-        //     setNavDisplay(true);
-        // }
+        if (window.pageYOffset >= references.projectRef.current.offsetTop) {
+            setActive(references.projectRef);
+            setNavDisplay(true);
+        }
     };
 
     useEffect(() => {
@@ -53,6 +54,7 @@ export default function Index() {
             <Home references={references}></Home>
             <About references={references} active={active}></About>
             <Skill references={references} active={active}></Skill>
+            <Project references={references} active={active}></Project>
         </div>
     );
 }
