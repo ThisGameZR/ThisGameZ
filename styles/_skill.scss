@@ -28,7 +28,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         column-gap: 5rem;
-        transition: all 1s ease-in-out;
+        transition: all 0.7s ease-in-out;
         opacity: 0;
         & > div {
             position: relative;
