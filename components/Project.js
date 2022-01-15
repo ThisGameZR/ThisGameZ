@@ -16,9 +16,9 @@ export default function Project({ references, active }) {
                     link={"https://github.com/amchicken/daily-poisson"}
                 />
                 <ProjectCard
-                    path={"/img/thisgamez.png"}
-                    name={"ThisGameZ"}
-                    link={"https://github.com/ThisGameZR/ThisGameZ"}
+                    path={"/img/cryp.jpg"}
+                    name={"IPB Exchange"}
+                    link={"https://exchange.blockchainipb.com/"}
                 />
             </div>
         </div>

@@ -11,7 +11,7 @@ export default function Home({ references }) {
             <div className="section">
                 <div className="title">Hello, I&apos;m ThisGameZ</div>
                 <div className="description">
-                    I&apos;m a full-stack web developer
+                    I&apos;m a JavaScript Developer
                 </div>
                 <button onClick={() => viewMore()}>View More</button>
             </div>

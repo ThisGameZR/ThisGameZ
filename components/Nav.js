@@ -52,7 +52,7 @@ export default function Nav({ references, active, navDisplay }) {
                     }
                     onClick={() => scrollTo(references.projectRef)}
                 >
-                    MY PROJECTS
+                    MY CONTRIBUTIONS
                 </li>
             </ul>
         </div>

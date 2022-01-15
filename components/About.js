@@ -78,17 +78,13 @@ export default function About({ references, active }) {
                                 </div>
                                 <div
                                     onClick={() => {
-                                        navigator.clipboard.writeText(
-                                            "+66628590849"
-                                        );
-                                        toast("+66628590849");
-                                        toast(
-                                            "✅ Phone number copied to clipboard"
+                                        window.open(
+                                            "https://github.com/ThisGameZR?tab=repositories"
                                         );
                                     }}
                                 >
                                     <Image
-                                        src="/svg/phone.svg"
+                                        src="/svg/github.svg"
                                         layout="fill"
                                     ></Image>
                                 </div>
