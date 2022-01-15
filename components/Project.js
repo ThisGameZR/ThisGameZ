@@ -17,7 +17,7 @@ export default function Project({ references, active }) {
                 />
                 <ProjectCard
                     path={"/img/cryp.jpg"}
-                    name={"IPB Exchange"}
+                    name={"IPB Exchange (In Progress)"}
                     link={"https://exchange.blockchainipb.com/"}
                 />
             </div>
