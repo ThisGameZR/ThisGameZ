@@ -38,16 +38,16 @@ export default function About({ references, active }) {
                             <h2>
                                 I&apos;m currently studying at Chiang Mai
                                 University.
-                                <br /> I&apos;m a full-stack web developer based
-                                in Thailand
+                                <br /> I&apos;m a JavaScript Developer based in
+                                Thailand
                             </h2>
                             <p>
-                                I majored in Computer Engineering, I expertise
-                                in Web-development. I&apos;ve always been
-                                someone who eager to learn new things. When I
-                                discovered web development in college, I&apos;ve
-                                been fascinated by it. So I decided to deepen my
-                                knowledge in web development.
+                                I majored in Information System Engineering, I
+                                expertise in Web-development. I&apos;ve always
+                                been someone who eager to learn new things. When
+                                I discovered web development in college,
+                                I&apos;ve been fascinated by it. So I decided to
+                                deepen my knowledge in web development.
                             </p>
                             <div className="contact-info">
                                 <div
