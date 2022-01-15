@@ -5,7 +5,7 @@ This project is a website I made for myself. It is a simple website with a few p
 ## 🚀 About Me
 
 -   Github https://github.com/ThisGameZR?tab=repositories
--   Facebook https://www.facebook.com/profile.php?id=100009118786117
+-   Facebook https://www.facebook.com/thisgamez/
 
 ## Demo
 
