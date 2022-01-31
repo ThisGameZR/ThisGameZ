@@ -15,11 +15,11 @@ export default function Project({ references, active }) {
                     name={"Daily Poisson"}
                     link={"https://github.com/amchicken/daily-poisson"}
                 />
-                <ProjectCard
+                {/* <ProjectCard
                     path={"/img/cryp.jpg"}
                     name={"IPB Exchange (In Progress)"}
                     link={"https://exchange.blockchainipb.com/"}
-                />
+                /> */}
             </div>
         </div>
     );
